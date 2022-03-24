@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class LNode<T> {
+public class LNode<T> where T: Equatable {
     var val:T
     var next:LNode?
     init(value:T) {
@@ -16,9 +16,25 @@ public class LNode<T> {
     }
 }
 
-public class Queue<T> {
+public class Queue<T> where T: Equatable {
     private var head:LNode<T>?
     private var lastRef:LNode<T>?
+    private var count:Int = 0
+    public var length: Int {
+        get {
+            return count
+        }
+    }
+    
+    public var topElement: T? {
+        get {
+            guard let topElem = self.lastRef else {
+                return nil
+            }
+            return topElem.val
+        }
+    }
+    
     public func Enqueue(val:T) -> Void {
         
         let node = LNode(value: val)
@@ -31,6 +47,7 @@ public class Queue<T> {
             head = node
             lastRef = node
         }
+        count += 1
     }
     
     public func Dequeue() -> T? {
@@ -42,12 +59,29 @@ public class Queue<T> {
         if(self.head == nil){
             self.lastRef = nil
         }
+        count -= 1
         return val
     }
 }
 
-public class Stack<T> {
+public class Stack<T> where T:Equatable {
     private var top:LNode<T>?
+    private var count:Int = 0
+    public var length: Int {
+        get {
+            return count
+        }
+    }
+    
+    public var topElement: T? {
+        get {
+            guard let topElem = self.top else {
+                return nil
+            }
+            return topElem.val
+        }
+    }
+    
     
     public func Push(val:T){
         guard let temp = self.top else{
@@ -56,6 +90,7 @@ public class Stack<T> {
         }
         self.top = LNode(value: val)
         self.top!.next = temp
+        count += 1
     }
     
     public func pop() -> T?{
@@ -65,6 +100,7 @@ public class Stack<T> {
         let next = temp.next
         let val = temp.val
         self.top = next
+        count -= 1
         return val
     }
 }
