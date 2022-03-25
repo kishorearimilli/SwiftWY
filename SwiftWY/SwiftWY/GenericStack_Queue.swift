@@ -28,7 +28,7 @@ public class Queue<T> where T: Equatable {
     
     public var topElement: T? {
         get {
-            guard let topElem = self.lastRef else {
+            guard let topElem = self.head else {
                 return nil
             }
             return topElem.val
@@ -86,6 +86,7 @@ public class Stack<T> where T:Equatable {
     public func Push(val:T){
         guard let temp = self.top else{
             self.top = LNode(value: val)
+            count += 1
             return
         }
         self.top = LNode(value: val)
