@@ -26,7 +26,7 @@ public class Queue<T> where T: Equatable {
         }
     }
     
-    public var topElement: T? {
+    public var topElement: T?{
         get {
             guard let topElem = self.head else {
                 return nil
