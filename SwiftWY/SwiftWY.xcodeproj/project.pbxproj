@@ -13,6 +13,7 @@
 		22179E1323E439B000453236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22179E1223E439B000453236 /* Assets.xcassets */; };
 		22179E1623E439B000453236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22179E1423E439B000453236 /* LaunchScreen.storyboard */; };
 		22179E1E23E43ABF00453236 /* GenericStack_Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22179E1D23E43ABF00453236 /* GenericStack_Queue.swift */; };
+		EB8AA19827ED88550088A7D3 /* RandomDSQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8AA19727ED88550088A7D3 /* RandomDSQuestions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		22179E1523E439B000453236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22179E1723E439B000453236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22179E1D23E43ABF00453236 /* GenericStack_Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericStack_Queue.swift; sourceTree = "<group>"; };
+		EB8AA19727ED88550088A7D3 /* RandomDSQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDSQuestions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				22179E1423E439B000453236 /* LaunchScreen.storyboard */,
 				22179E1723E439B000453236 /* Info.plist */,
 				22179E1D23E43ABF00453236 /* GenericStack_Queue.swift */,
+				EB8AA19727ED88550088A7D3 /* RandomDSQuestions.swift */,
 			);
 			path = SwiftWY;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22179E0E23E439AF00453236 /* ViewController.swift in Sources */,
+				EB8AA19827ED88550088A7D3 /* RandomDSQuestions.swift in Sources */,
 				22179E1E23E43ABF00453236 /* GenericStack_Queue.swift in Sources */,
 				22179E0C23E439AF00453236 /* AppDelegate.swift in Sources */,
 			);
